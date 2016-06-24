@@ -22,7 +22,7 @@ while True:
 		if not data:
 			break
 
-		recvdata = 'hi, you send [%s] %s' %(time.ctime(),data)
+		recvdata = 'hi, you send [%s] %s from %s' %(time.ctime(),data, CliAddr)
 		tcpCliSock.send(recvdata.encode())
 
 tcpCliSock.close()
