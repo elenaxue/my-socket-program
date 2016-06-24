@@ -18,7 +18,6 @@ while True:
 
 	ack_data = '[%s] %s' % (time.ctime(), data.decode())
 	# udpSerSock.sendto(ack_data.encode(), cli_addr)
-	print('...recv msg %s' % (ack_data))
-	print(cli_addr)
-
+	print('...recv msg %s from %s' % (ack_data, cli_addr))
+	
 udpSerSock.close()
